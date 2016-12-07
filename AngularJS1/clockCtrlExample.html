@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Clock Controller Example</title>
+</head>
+<!--<body ng-app="MyApp"> -->
+
+<body>
+    <div ng-controller="ClockController">
+        <table border="1px">
+            <thead>
+                <tr>
+                    <td>Date</td>
+                    <td>Place</td>
+                    <td>Event</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>{{model.now}}</td>
+                <td>{{model.place}}</td>
+                <td>{{model.event}}</td>
+            </tr>
+        </table>
+        <!-- Expressive HTML -->
+        <p>{{model.now}}</p>
+        <p>{{model.place}}</p>
+        <p>{{model.event}}</p>
+        <form>
+            <h2>Two-way binding </h2> <pre>
+            Format 1: {{ model.now | date: 'yyyy-MM-dd HH:mm:ss' }}
+            Format 2: {{ model.now | date: 'fullDate' }}
+            Format 3: {{ model.now | date: 'yyyy-MM-dd' }}
+        </pre>
+            <div class="form-group">
+                <label for="date-birth" class="control-label">Birth date:</label>
+                <div class="control">
+                    <input id="date-birth" class="form-control" type="date" ng-model="model.now"> </div>
+            </div>
+            <div class="form-group">
+                <label for="date-birth" class="control-label">The same date:</label>
+                <div class="control">
+                    <input id="date-birth" class="form-control" type="date" ng-model="model.now"> </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/ClockController.js"></script>
+</body>
+
+</html>

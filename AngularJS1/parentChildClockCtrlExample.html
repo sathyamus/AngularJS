@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>New HMTL document by NewJect</title>
+
+</head>
+<body>
+
+<div ng-controller="ClockController">
+	
+	
+	<form>
+
+			<h2>Two-way binding </h2>
+
+			<pre>Format 1: {{ model1.now | date: 'yyyy-MM-dd HH:mm:ss' }}
+			Format 2: {{ model1.now | date: 'fullDate' }}</pre>
+
+			<div class="form-group">
+				<label for="date-birth" class="control-label">Birth date:</label>
+				<div class="control">
+					<input id="date-birth" class="form-control" type="date" ng-model="model1.now">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="date-birth" class="control-label">The same date:</label>
+				<div class="control">
+					<input id="date-birth" class="form-control" type="date" ng-model="model1.now">
+				</div>
+			</div>
+
+		</form>
+
+
+	
+	<div ng-controller="NewClockCtrl">
+	
+	
+	<form>
+
+			<h2>Two-way binding </h2>
+
+			<pre>Format 1: {{ model1.now | date: 'yyyy-MM-dd HH:mm:ss' }}
+			Format 2: {{ model1.now | date: 'fullDate' }}</pre>
+
+			<div class="form-group">
+				<label for="date-birth" class="control-label">Birth date:</label>
+				<div class="control">
+					<input id="date-birth" class="form-control" type="date" ng-model="model1.now">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="date-birth" class="control-label">The same date:</label>
+				<div class="control">
+					<input id="date-birth" class="form-control" type="date" ng-model="model1.now">
+				</div>
+			</div>
+
+		</form>
+
+</div>
+</div>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers/ClockController.js"></script>
+	<script src="scripts/controllers/NewClockCtrl.js"></script>
+	
+
+</body>
+</html>
