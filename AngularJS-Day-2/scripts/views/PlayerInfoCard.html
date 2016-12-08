@@ -1,0 +1,27 @@
+<div>
+
+
+    <p>Time: {{player.newData}}</p>
+    <h2>Player Detials</h2>
+    <h3>Name: {{player.name}}</h3>
+    <h3>Mentor: {{player.mentor}}</h3>
+    <p>Debut Year: {{player.debutYear}}</p>
+    <p>Type: {{player.type}}</p>
+    
+    <p>Friends</p>    
+    <ul>
+            <li ng-repeat="friend in player.friends">{{friend}}</li>
+    </ul>
+    
+    
+    <button ng-click="clickMe(player)">PlayerType</button>
+    
+<!--
+    <script>
+        function clickMe(player) {
+            alert(player.type);
+        }
+    </script>
+-->
+    
+</div>

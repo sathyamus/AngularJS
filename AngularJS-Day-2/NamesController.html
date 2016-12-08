@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Names Controller Example</title>
+
+
+</head>
+    
+<!--<body ng-app="MyApp"> -->
+<body>
+
+<div ng-controller="NamesController">
+    
+    <h2 ng-bind="date"></h2>
+    <label for="nameList">
+        <select id="nameList" 
+                ng-options="name as name for name in names" 
+                ng-model="name" ng-init="name=names[0]">
+        </select>
+    </label>
+    
+    <button ng-click="addName()">Add</button>
+    <button ng-click="removeName()">Remove</button>
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/NamesController.js"></script>
+<script src="scripts/services/NamesService.js"></script>
+<script src="scripts/services/DateService.js"></script>
+</body>
+</html>
