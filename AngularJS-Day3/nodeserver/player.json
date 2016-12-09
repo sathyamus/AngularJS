@@ -1,0 +1,18 @@
+[
+
+	{
+		"name": "Virat Kohli",
+		"mentor": "Sachin",
+		"debutYear": "2010",
+		"type": "Batsman",
+		"friends": ["Dhoni", "Yuvraj", "Anushka"]
+					},
+	{
+		"name": "Dhoni",
+		"mentor": "Gawaskar",
+		"debutYear": "2006",
+		"type": "WicketKeeper",
+		"friends": ["Sachin", "Ashwin", "Raina"]
+					}
+
+				]
